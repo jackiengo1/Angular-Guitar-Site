@@ -1,0 +1,73 @@
+
+<div id = "loginDiv">
+  <button type="button" class="btn btn-default btn-lg" id = "loginBtn" (click) = "loginPage()">Login</button>
+  <button type="button" class="btn btn-default btn-lg" id = "registerBtn" (click) = "registerPage()">register</button>
+</div>
+
+<div id ="title">
+  <h1>Public Chord Sheets</h1>
+</div>
+
+<div class="row sheetRow">
+  <div class="col-sm-4 chordSheet" id = "div1" (click) = "openViewer(0)">
+    <h3>Title:</h3><p>{{titleList[0]}}</p>
+    <h3>User Email:</h3><p>{{userList[0]}}</p>
+    <h3>Version:</h3><p>{{versionList[0]}}</p>
+  </div>
+  <div class="col-sm-4 chordSheet" id = "div2" (click) = "openViewer(1)">
+    <h3>Title:</h3><p>{{titleList[1]}}</p>
+    <h3>User Email:</h3><p>{{userList[1]}}</p>
+    <h3>Version:</h3><p>{{versionList[1]}}</p>
+  </div>
+  <div class="col-sm-4 chordSheet" id = "div3" (click) = "openViewer(2)">
+    <h3>Title:</h3><p>{{titleList[2]}}</p>
+    <h3>User Email:</h3><p>{{userList[2]}}</p>
+    <h3>Version:</h3><p>{{versionList[2]}}</p>
+  </div>
+</div>
+
+<div class="row sheetRow">
+  <div class="col-sm-4 chordSheet" id = "div4" (click) = "openViewer(3)">
+    <h3>Title:</h3><p>{{titleList[3]}}</p>
+    <h3>User Email:</h3><p>{{userList[3]}}</p>
+    <h3>Version:</h3><p>{{versionList[3]}}</p>
+  </div>
+  <div class="col-sm-4 chordSheet" id = "div5" (click) = "openViewer(4)">
+    <h3>Title:</h3><p>{{titleList[4]}}</p>
+    <h3>User Email:</h3><p>{{userList[4]}}</p>
+    <h3>Version:</h3><p>{{versionList[4]}}</p>
+  </div>
+  <div class="col-sm-4 chordSheet" id = "div6" (click) = "openViewer(5)">
+    <h3>Title:</h3> <p>{{titleList[5]}}</p>
+    <h3>User Email:</h3><p>{{userList[5]}}</p>
+    <h3>Version:</h3><p>{{versionList[5]}}</p>
+  </div>
+</div>
+
+<div class="row sheetRow">
+  <div class="col-sm-4 chordSheet" id = "div7" (click) = "openViewer(6)">
+    <h3>Title:</h3> <p>{{titleList[6]}}</p>
+    <h3>User Email:</h3> <p>{{userList[6]}}</p>
+    <h3>Version:</h3> <p>{{versionList[6]}}</p>
+  </div>
+  <div class="col-sm-4 chordSheet" id = "div8" (click) = "openViewer(7)">
+    <h3>Title:</h3><p>{{titleList[7]}}</p>
+    <h3>User Email:</h3><p>{{userList[7]}}</p>
+    <h3>Version:</h3><p>{{versionList[7]}}</p>
+  </div>
+  <div class="col-sm-4 chordSheet" id = "div9" (click) = "openViewer(8)">
+    <h3>Title:</h3><p>{{titleList[8]}}</p>
+    <h3>User Email:</h3><p>{{userList[8]}}</p>
+    <h3>Version:</h3><p>{{versionList[8]}}</p>
+  </div>
+</div>
+
+<div>
+  <ul class="pager">
+  <li><a href = "#"  (click) = "previousPage()" id = "pages">Previous</a></li>
+  <li><a href = "#" (click) = "nextPage()" id = "pages">Next</a></li>
+</ul>
+</div>
+
+
+

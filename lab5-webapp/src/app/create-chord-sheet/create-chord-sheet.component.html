@@ -1,0 +1,26 @@
+<div id = "toggleBtn">
+  <label>Toggle save by title:</label>
+  <button type="button" class="btn btn-info btn-lg" (click) = "toggleSaveTitle()" id = "toggleTitleBtn">Enter your own title</button>
+</div>
+
+
+<div id = "inputDiv" class = "container">
+  <label>Title</label>
+  <input type = "text" [(ngModel)] = 'titleValue' id = "inputTitle"/>
+</div>
+
+
+
+
+<div class="form-group">
+  <label for="chordString">Enter chord string:</label>
+  <textarea class="form-control" rows="20" id="chordStringTextArea" [(ngModel)] = 'textAreaValue'></textarea>
+</div>
+
+<p>{{errorTag}}</p>
+
+<div id = "saveDiv" class = "container">
+    <button type="button" class="btn btn-primary btn-lg" (click) = "save()">Save</button>
+    <button type="button" class="btn btn-warning btn-lg" (click) = "clearTextArea()">Clear</button>
+    <button type="button" class="btn btn-default btn-lg" (click) = "back()">Back</button>
+</div>

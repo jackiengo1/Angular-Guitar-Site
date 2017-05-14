@@ -1,0 +1,26 @@
+#saveDiv{
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+p{
+    margin: auto;
+    width: 300px;
+    text-align: center;
+}
+
+#inputDiv{
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+}
+
+#inputTitle{
+    margin:  0 auto;
+}
+
+#toggleBtn{
+    text-align: center;
+    margin-bottom: 20px;
+}

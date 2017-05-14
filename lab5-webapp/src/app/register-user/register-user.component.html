@@ -1,0 +1,13 @@
+
+<div id = "inputDiv" class = "container">
+    <label for="usr" >E-mail:</label>
+    <input type="text" id="usr" [(ngModel)] = 'emailValue'>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" [(ngModel)] = 'passwordValue'>
+</div>
+
+<div id = "btnDiv" class = "container">
+    <button type="button" class="btn btn-default btn-lg" (click) = "register(emailValue, passwordValue)">Register</button>
+    <button type="button" class="btn btn-default btn-lg" (click) = "back()">Back</button>
+</div>

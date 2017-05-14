@@ -1,0 +1,57 @@
+
+<div class = "container" id = "backBtnDiv">
+    <button type="button" class="btn btn-default btn-lg" id = "backBtn" (click) = "back()">Back</button>
+    <button type="button" class="btn btn-default btn-lg" id = "fullScreenBtn" data-toggle="modal" data-target="#myModal">Full Screen</button>
+</div>
+
+<h3>Chord Sheet Title: {{chordSheetTitle}}</h3>
+<h3>Chord Sheet Version: {{chordSheetVersion}}</h3>
+<h3>Chord Sheet Date: {{chordSheetDate}}</h3>
+
+<div class = "container" id = "formattedChord" [innerHTML] = "chordStringFormatted.html"></div>
+
+<div id = "editDiv" class = "row container">
+    <div class = "col-sm-6 spacing">
+        <label>Edit title:</label>
+        <input type = "text" [(ngModel)] = 'titleValue'>
+        <button type="button" class="btn btn-default" (click) = "setTitle(titleValue)">Set title</button>
+    </div>
+    <div class = "col-sm-6 spacing">
+        <label>Set to public/private:</label>
+        <button type="button" class="btn btn-default" id = "visibilityBtn" (click) = "setVisibility()">Chord sheet is public</button>
+    </div>
+</div>
+<div id = "editDiv" class = "row container">
+    <div class = "col-sm-6 spacing">
+         <button type="button" class="btn btn-danger" id = "visibilityBtn" (click) = "deleteChordSheet()">Delete Chord Sheet</button>
+     </div>
+     <div class = "col-sm-6 spacing">
+         <button type="button" class="btn btn-primary" id = "visibilityBtn" (click) = "updateChordSheet()">Update Chord Sheet</button>
+     </div>
+</div>
+
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4> <strong>Title:</strong> {{chordSheetTitle}} </h4>
+        <h4> <strong>Version:</strong> {{chordSheetVersion}} </h4>
+        <h4> <strong>Date:</strong> {{chordSheetDate}} </h4>
+      </div>
+      <div class="modal-body">
+        
+        <div id = "chordDiv">
+            <div class = "container" id = "formattedChord" [innerHTML] = "chordStringFormatted.html"></div>
+        </div>
+        
+      </div>
+      <div class="modal-footer" id = "closeModalBtn">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>

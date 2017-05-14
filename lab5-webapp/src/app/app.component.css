@@ -1,0 +1,26 @@
+#title{
+    text-align: center;
+}
+
+#titleDiv{
+    background-color: #15224f; 
+    color: white;
+}
+
+.policy{
+    text-align: center;
+    line-height: 30px;
+    padding: 7px 0;
+}
+
+.links{
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.footer-bottom{
+    background-color: #15224f;
+    min-height: 30px;
+    width: 100%;
+}

@@ -1,0 +1,47 @@
+<div id ="btnDiv" class = "container">
+<button type="button" class="btn btn-default btn-lg" id = "fullScreenBtn" data-toggle="modal" data-target="#myModal">Full Screen</button>
+</div>
+
+<h3 class = "noHighlight"><strong>Title:</strong> {{chordSheetTitle}}</h3>
+<h3 class = "noHighlight"><strong>Version:</strong> {{chordSheetVersion}}</h3>
+<h3 class = "noHighlight"><strong>User:</strong> {{chordSheetEmail}}</h3>
+<h3 class = "noHighlight"><strong>Date:</strong> {{chordSheetDate}}</h3>
+
+<div id = "chordDiv">
+     
+    <div [innerHTML] = "chordStringFormatted.html" class = "noHighlight"></div>
+    
+</div>
+
+
+<div id ="btnDiv">
+    <button type="button" class="btn btn-default btn-lg" id = "backBtn" (click) = "back()">Back</button>
+</div>
+
+
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title noHighlight"><strong>Title:</strong> {{chordSheetTitle}}</h4>
+        <h4 class = "noHighlight"><strong>Version:</strong> {{chordSheetVersion}}</h4>
+        <h4 class = "noHighlight"><strong>User:</strong> {{chordSheetEmail}}</h4>
+        <h4 class = "noHighlight"><strong>Date:</strong> {{chordSheetDate}}</h4>
+      </div>
+      <div class="modal-body">
+        
+        <div id = "chordDiv">
+            <div [innerHTML] = "chordStringFormatted.html" class = "noHighlight" id = "chord"></div>
+        </div>
+        
+      </div>
+      <div class="modal-footer" id = "closeModalBtn">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>

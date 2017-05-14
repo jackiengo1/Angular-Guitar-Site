@@ -1,0 +1,52 @@
+p{
+    font-family: monospace;
+    white-space: pre-wrap;
+    letter-spacing: 2px;
+}
+
+
+#chordDiv{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#btnDiv{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+
+#fullScreenBtn{
+    margin: auto;
+}
+
+.noHighlight{
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+     -khtml-user-select: none; /* Konqueror */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+}
+
+#chord{
+    text-align: center;
+}
+
+#closeModalBtn{
+    text-align: center !important;
+}

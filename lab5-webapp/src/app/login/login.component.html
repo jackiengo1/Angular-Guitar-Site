@@ -1,0 +1,16 @@
+
+<div id = "login">
+<label for="usr" class = "loginComponents">E-mail:</label>
+<input type="text" id="usr" [(ngModel)] = 'emailValue'>
+
+<br/>
+
+<label for="pwd" class = "loginComponents">Password:</label>
+<input type="password" id="pwd" [(ngModel)] = 'passwordValue'>
+
+<br/>
+
+<button type="button" class="btn btn-default btn-lg" (click) = "login(emailValue, passwordValue)">Login</button>
+<button type="button" class="btn btn-default btn-lg" (click) = "back()">Back</button>
+
+</div>

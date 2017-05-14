@@ -1,0 +1,32 @@
+.sheetRow{
+    text-align: center;
+}
+
+#loginDiv{
+    text-align: center;
+}
+
+.chordSheet{
+    margin-bottom: 30px;
+    height: 250px;
+    text-align: center;
+    background-color: #efdfb1;
+    border-left: 2px solid black;
+}
+
+.chordSheet:hover{
+    background-color: #dbdbdb;
+}
+
+#pages{
+    cursor: pointer;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+#title{
+    text-align: center;
+}
